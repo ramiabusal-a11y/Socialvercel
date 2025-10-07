@@ -699,6 +699,32 @@ ${campaign.results || 'لم تسجل نتائج'}
         const root = ReactDOM.createRoot(document.getElementById('root'));
         root.render(e(App));
 
+ 
     </script>
+
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDgS8z8H_7xcEQUB1RrMsRxCJlpYH-qqJc",
+    authDomain: "socialvercel.firebaseapp.com",
+    projectId: "socialvercel",
+    storageBucket: "socialvercel.firebasestorage.app",
+    messagingSenderId: "848367695675",
+    appId: "1:848367695675:web:500a9d41422fef378f291e",
+    measurementId: "G-Q5P7C1D896"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+    
 </body>
 </html>
